@@ -1,0 +1,36 @@
+/* ./tw.exe -i ./css/e.css -o ./css/src/e.css --watch --minify */
+
+@import "tailwindcss";
+
+*, *::after, *::before {
+  box-sizing: border-box;
+}
+
+::selection {
+  background-color: black;
+  color: white;
+}
+
+html {
+  overflow: hidden;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    margin: 0; 
+    padding: 0; 
+    color:white; 
+    font-size: 16px;
+    position: relative;
+    font-smooth: antialiased;
+    font-family: "Tomorrow", serif;
+    overflow-x: hidden;
+}
+
+input:focus, textarea:focus {
+    outline: unset; 
+}
+button {
+  cursor: pointer; 
+}
