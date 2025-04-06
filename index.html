@@ -450,23 +450,27 @@
                             </div>
                             <div class=" h-full xl:border-l-[1px] xl:border-l-solid xl:border-l-[#b7b7b7] xl:w-1/2">
             
-                                <form action="">
+                                <form action="https://api.web3forms.com/submit" method="POST">
+                                    <div class="h-captcha" data-captcha="true"></div>
+                                    <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+                                    <input type="hidden" name="access_key" value="4a8f7570-8641-470e-bdd1-7ca0913686ab">
+                                    <input type="hidden" name="from_name" value="voidwirestudio">
                                     <div class=" h-16 ">
-                                        <input type="text" class=" transition duration-150 ease-in-out size-full p-3 border-t-solid border-t-[1px] border-t-[#b7b7b7] xl:border-t-0 hover:bg-[#b7b7b7]/25 focus:bg-[#b7b7b7]/25 " placeholder="Name">
+                                        <input type="text" name="name" class=" transition duration-150 ease-in-out size-full p-3 border-t-solid border-t-[1px] border-t-[#b7b7b7] xl:border-t-0 hover:bg-[#b7b7b7]/25 focus:bg-[#b7b7b7]/25 " placeholder="Name">
                                     </div>
                                     <div class=" flex h-16 border-y-[1px] border-y-solid border-y-[#b7b7b7]">
                                         <div class=" w-1/2 border-r-[1px] border-r-solid border-r-[#b7b7b7]">
-                                            <input type="email" class=" transition duration-150 ease-in-out size-full p-3 hover:bg-[#b7b7b7]/25 focus:bg-[#b7b7b7]/25 " placeholder="Email">
+                                            <input type="email" name="email" class=" transition duration-150 ease-in-out size-full p-3 hover:bg-[#b7b7b7]/25 focus:bg-[#b7b7b7]/25 " required placeholder="Email">
                                         </div>
                                         <div class=" w-1/2">
-                                            <input type="tel" class=" transition duration-150 ease-in-out size-full p-3 hover:bg-[#b7b7b7]/25 focus:bg-[#b7b7b7]/25  focus:bg-[#b7b7b7]" placeholder="Telephone">
+                                            <input type="tel" name="telephone" class=" transition duration-150 ease-in-out size-full p-3 hover:bg-[#b7b7b7]/25 focus:bg-[#b7b7b7]/25  focus:bg-[#b7b7b7]" placeholder="Telephone">
                                         </div>
                                     </div>
                                     <div class=" h-16 border-b-[1px] border-b-solid border-b-[#b7b7b7] ">
-                                        <input type="text" class=" transition duration-150 ease-in-out size-full p-3 hover:bg-[#b7b7b7]/25 focus:bg-[#b7b7b7]/25 " placeholder="Subject">
+                                        <input type="text" name="subject" class=" transition duration-150 ease-in-out size-full p-3 hover:bg-[#b7b7b7]/25 focus:bg-[#b7b7b7]/25 " placeholder="Subject">
                                     </div>
                                     <div class=" h-64 border-b-[1px] border-b-solid border-b-[#b7b7b7] ">
-                                        <textarea type="text" class=" transition duration-150 ease-in-out size-full p-3 hover:bg-[#b7b7b7]/25 focus:bg-[#b7b7b7]/25 resize-none " placeholder="Content"></textarea>
+                                        <textarea type="text" name="message" class=" transition duration-150 ease-in-out size-full p-3 hover:bg-[#b7b7b7]/25 focus:bg-[#b7b7b7]/25 resize-none " placeholder="Content"></textarea>
                                     </div>
                                     <button type="submit" class=" w-full h-16 text-center font-semibold hover:bg-[#b7b7b7]/25 text-opacity-80">Mail</button>
                                 </form>
